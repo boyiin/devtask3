@@ -1,0 +1,80 @@
+body{
+    overflow: hidden;
+}
+.div-left{
+    height:100vh !important;
+    background: #05B993 url('https://devcareer.io/images/bg.svg');
+}
+.div-left img{
+    margin-top: 50px;
+    margin-left:50px;
+}
+.avatar img{
+     border:5px #FFFFFF solid; 
+     margin-top:100px;
+}
+.btn-profile{ 
+    padding-top:15px; padding-bottom:15px; 
+    background: #FFFFFF !important; 
+    color: #222 !important;
+    border-radius: 2px; width:300px;
+    margin-left: 50px;
+}
+.toplink{
+    float: right;
+    margin-top:5px;
+    margin-right:10px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+ 
+  }
+  .dark-mode .div-left{
+      background: black !important;
+      border-right: solid white !important;
+  }
+.funame{
+    margin:100px;
+}
+li{
+    margin-left: 10px; 
+    border:solid #000;
+    background-color: gray !important;
+    color: white ;
+    font-size: 10px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  @media (max-width:767px){
+    html, body {
+        width: auto !important;
+        overflow-x: hidden !important;
+        }
+    .avatar img{ 
+        border: 5px #FFFFFF solid;
+        margin-top: 20px;
+        width: 400px !important;
+        border-radius: 1px;
+        background-size: contain !important;
+        margin-right: 50px !important;
+     }
+
+    .div-left{ 
+        height:auto !important;
+     }
+    .div-right{
+        height:100% !important; 
+     }
+     .d-sm-none{
+        display: none !important;
+    }
+}

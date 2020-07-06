@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devtask2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="index.css">
+    <script src= "https://code.jquery.com/jquery-1.12.4.min.js"> 
+</script>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col-md-4 div-left">
+                    <div class="avatar">
+                        <img src="https://res.cloudinary.com/dhlxvlyuz/image/upload/v1593989999/pro_mmfgo2.jpg" alt=" Suliat Jatto " height="300px" width="300px" class="img-rounded">
+                    </div> <br>
+        			            
+        			
+        			<div class="profile">
+	        			<div class="mail">
+	                        <a href="mailto:suliat.jatto@gmail.com" class="btn btn-profile btn-lg btn-block" target="_blank">Master Builder</a>
+	                    </div>
+	        		</div>
+        			<br/><br/>
+    			
+    
+            </div><!--end of col-md-4-->
+
+            <div class="col-md-8 div-right">
+    		    <div class="toplink d-sm-none d-md-inline-block">
+                    <a href="https://devcareer.io/account/signup"><i class="fa fa-arrow-left"></i>&nbsp; Create your <b>DevCareer.io</b> page </a>
+                    <button id="themes" type="button" class="theme"onclick="myFunction()"> Go Dark </button>
+                </div>
+
+                <div class="funame">
+                    <h2>JATTO, Adeboyin Suliat</h2> <br>
+                    <ul class="list-group list-group-horizontal-md">
+                        <li class="list-group-item">EgoLang Developer </li>
+                        <li class="list-group-item">Business Developer</li>
+                        <li class="list-group-item">MCommunity Builder</li>
+                        <li class="list-group-item">Data Analyst</li>
+                      </ul> <br>
+
+                      <hr style="height:5px;border:none;color:rgb(63, 146, 63);background-color:rgb(63, 146, 63);">
+                      <br>
+                      <p style="font-size: 12px;">I love driving value creation through talented people and scalable businesses. Pusher of the #NextMillionBuilders Campaign.</p> <br>
+                      <h3>Find me on</h3>
+                      <a href="https://web.facebook.com/suliat.jatto" class="fa fa-facebook " style=" background: white;
+                      color: pink; width: auto"></a>
+                    
+                      <a href="#" class="fa fa-instagram" style=" background: white;
+                      color: brown; width: auto"></a>
+                      <a href="#" class="fa fa-linkedin"  style=" background: white;
+                      color: red; width: auto;"></a>
+                      <a href="https://twitter.com/Jattybabe" class="fa fa-twitter"  style=" background: white;
+                      color: gold; width: auto"></a>
+                
+                </div><!--en dof funame-->
+
+        </div><!--end of row-->
+    </div><!--end of container-->
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        function change() // no ';' here
+{
+    var elem = document.getElementById("themes");
+    if (elem.value=="Go Dark") elem.value = "Go White";
+    else elem.value = "Go Dark";
+}
+$(document).ready(function() { 
+            $("button").click(function() { 
+                // Change text of button element 
+                $("#themes").html("Go White"); 
+            }); 
+        });
+        // $(document).ready(function() { 
+        //     if()
+        //     $("button").click(function() { 
+        //         // Change text of button element 
+        //         $("#themes").html("Go White"); 
+        //     }); 
+        // });
+    </script>
+</body>
+</html>
